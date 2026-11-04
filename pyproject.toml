@@ -1,0 +1,20 @@
+[project]
+name = "feedback-analyzer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Denis Sam Kusmahendra", email = "denissamkusmahen@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.162.0",
+    "groq>=1.7.0",
+]
+
+[project.scripts]
+feedback-analyzer = "feedback_analyzer:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
